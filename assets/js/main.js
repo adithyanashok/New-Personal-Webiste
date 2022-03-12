@@ -23,26 +23,26 @@
    * Easy event listener function
    */
   const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
+     let selectEl = select(el, all)
 
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectEl.addEventListener(type, listener)
-      }
-    }
+    // if (selectEl) {
+    //   if (all) {
+    //     selectEl.forEach(e => e.addEventListener(type, listener))
+    //   } else {
+    //     selectEl.addEventListener(type, listener)
+    //   }
+    // }
   }
 
   /**
    * Scrolls to an element with header offset
    */
-  const scrollto = (el) => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
-  }
+  // const scrollto = (el) => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth'
+  //   })
+  // }
 
   /**
    * Mobile nav toggle

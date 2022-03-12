@@ -65,8 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   display: flex;
   align-items: center;
-  z-index: 997;
-  overflow-y: auto;
+  
 }
 #header * {
   transition: ease-in-out 0.3s;
@@ -139,7 +138,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Header Top */
 #header.header-top {
   height: 80px;
-  position: fixed;
   left: 0;
   top: 0;
   right: 0;
@@ -253,15 +251,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .navbar-mobile {
-  position: fixed;
-  overflow: hidden;
+  
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.9);
   transition: 0.3s;
-  z-index: 999;
+ 
   margin-top: 0;
 }
 .navbar-mobile .mobile-nav-toggle {
@@ -296,12 +293,12 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  overflow: hidden;
-  position: absolute;
+  /* overflow: hidden; */
+  /* position: absolute; */
   width: 100%;
   top: 140px;
   bottom: 100%;
-  opacity: 0;
+  /* opacity: 0; */
   transition: ease-in-out 0.4s;
   z-index: 2;
 }

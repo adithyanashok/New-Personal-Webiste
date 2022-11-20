@@ -531,19 +531,19 @@ section .container {
   position: relative;
   z-index: 1;
 }
-.testimonials .swiper-pagination {
+ /* .testimonials .swiper-pagination {
   margin-top: 20px;
   position: relative;
-}
-.testimonials .swiper-pagination .swiper-pagination-bullet {
+} */
+/* .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.3);
-}
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+} */
+/* .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #18d26e;
-}
+}  */
 
 /*--------------------------------------------------------------
 # Resume

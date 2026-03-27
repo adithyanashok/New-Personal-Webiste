@@ -919,6 +919,12 @@ textarea {
     box-shadow 180ms ease;
 }
 
+.contact-panel__details a span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
+}
+
 .contact-panel__details a:hover {
   transform: translateY(-2px);
   border-color: rgba(15, 118, 110, 0.2);
@@ -934,6 +940,7 @@ textarea {
   background: var(--accent-soft);
   color: var(--accent);
   font-size: 1.1rem;
+  flex-shrink: 0;
 }
 
 .site-footer {
@@ -1208,6 +1215,28 @@ textarea {
 
   .contact-panel {
     padding: 1.4rem;
+  }
+
+  .contact-panel__copy h2 {
+    font-size: clamp(1.9rem, 8vw, 2.6rem);
+  }
+
+  .contact-panel__details {
+    gap: 0.75rem;
+  }
+
+  .contact-panel__details a {
+    align-items: flex-start;
+    gap: 0.85rem;
+    min-height: 0;
+    padding: 0.95rem;
+    border-radius: 16px;
+  }
+
+  .contact-panel__details i {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 12px;
   }
 
   .site-footer__inner {

@@ -9,6 +9,10 @@
   const sectionTargets = navLinks
     .map((link) => document.querySelector(link.getAttribute("href")))
     .filter(Boolean);
+  const progressBar = document.querySelector(".scroll-progress");
+  const tiltItems = document.querySelectorAll("[data-tilt]");
+  const root = document.documentElement;
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
   const closeMenu = () => {
     if (!nav || !menuToggle) return;
@@ -44,6 +48,24 @@
     header.classList.toggle("is-scrolled", window.scrollY > 24);
   };
 
+  const updateScrollProgress = () => {
+    if (!progressBar) return;
+
+    const scrollableHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollableHeight > 0 ? window.scrollY / scrollableHeight : 0;
+    progressBar.style.transform = `scaleX(${Math.min(Math.max(progress, 0), 1)})`;
+  };
+
+  const updatePointerGlow = (event) => {
+    if (reduceMotion.matches) return;
+    const x = (event.clientX / window.innerWidth) * 100;
+    const y = (event.clientY / window.innerHeight) * 100;
+
+    root.style.setProperty("--pointer-x", `${x}%`);
+    root.style.setProperty("--pointer-y", `${y}%`);
+  };
+
   const setActiveLink = (id) => {
     navLinks.forEach((link) => {
       const isMatch = link.getAttribute("href") === `#${id}`;
@@ -61,12 +83,15 @@
       });
     },
     {
-      threshold: 0.16,
+      threshold: 0.14,
       rootMargin: "0px 0px -10% 0px",
     }
   );
 
-  revealItems.forEach((item) => revealObserver.observe(item));
+  revealItems.forEach((item, index) => {
+    item.style.transitionDelay = `${Math.min(index * 45, 220)}ms`;
+    revealObserver.observe(item);
+  });
 
   const sectionObserver = new IntersectionObserver(
     (entries) => {
@@ -77,12 +102,39 @@
       });
     },
     {
-      threshold: 0.45,
-      rootMargin: "-15% 0px -40% 0px",
+      threshold: 0.35,
+      rootMargin: "-20% 0px -45% 0px",
     }
   );
 
   sectionTargets.forEach((section) => sectionObserver.observe(section));
+
+  const resetTilt = (element) => {
+    element.style.transform = "";
+  };
+
+  if (!reduceMotion.matches) {
+    tiltItems.forEach((item) => {
+      item.addEventListener("mousemove", (event) => {
+        const rect = item.getBoundingClientRect();
+        const x = (event.clientX - rect.left) / rect.width;
+        const y = (event.clientY - rect.top) / rect.height;
+        const rotateX = (0.5 - y) * 7;
+        const rotateY = (x - 0.5) * 8;
+
+        item.style.transform =
+          `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-4px)`;
+      });
+
+      item.addEventListener("mouseleave", () => {
+        resetTilt(item);
+      });
+
+      item.addEventListener("blur", () => {
+        resetTilt(item);
+      });
+    });
+  }
 
   document.addEventListener("click", (event) => {
     if (!nav || !menuToggle) return;
@@ -93,12 +145,20 @@
     }
   });
 
-  window.addEventListener("scroll", updateHeaderState, { passive: true });
+  window.addEventListener("scroll", () => {
+    updateHeaderState();
+    updateScrollProgress();
+  }, { passive: true });
+
   window.addEventListener("resize", () => {
     if (window.innerWidth > 820) {
       closeMenu();
     }
+    updateScrollProgress();
   });
 
+  window.addEventListener("mousemove", updatePointerGlow, { passive: true });
+
   updateHeaderState();
+  updateScrollProgress();
 })();

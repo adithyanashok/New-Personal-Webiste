@@ -24,13 +24,20 @@
     />
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="portfolio-dark">
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <div class="page-shell">
+      <div class="reference-noise" aria-hidden="true"></div>
+      <div class="reference-glow reference-glow--one" aria-hidden="true"></div>
+      <div class="reference-glow reference-glow--two" aria-hidden="true"></div>
+
       <header class="site-header" id="top">
         <div class="container site-header__inner">
           <a class="brand" href="#top" aria-label="Adithyan Ashok home">
+            <span class="brand__mark">A</span>
             <span class="brand__text">
-              <strong>Adithyan Ashok</strong>
+              <strong>Adithyan.</strong>
               <span>Full-Stack Developer</span>
             </span>
           </a>
@@ -47,10 +54,11 @@
           </button>
 
           <nav class="site-nav" id="site-nav">
-            <a href="#about">About</a>
-            <a href="#featured">Featured Work</a>
-            <a href="#experience">Experience</a>
-            <a href="#archive">Projects</a>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#tools">Tools</a>
+            <a href="#featured">Projects</a>
+            <a href="#about">About Me</a>
             <a href="#contact">Contact</a>
             <a
               class="nav-resume"
@@ -62,559 +70,439 @@
         </div>
       </header>
 
-      <main>
-        <section class="hero">
-          <div class="container hero__grid">
-            <div class="hero__content reveal">
-              <h1>
-                I build clean mobile and web experiences that feel fast from the
-                first tap.
-              </h1>
-              <p class="hero__lede">
-                I work across Flutter, React Native, React.js, Node.js,
-                ExpressJS, NestJS, Firebase, MongoDB, and AWS to turn product
-                ideas into responsive, production-ready apps with strong UX and
-                solid backend systems.
-              </p>
+      <main class="reference-home">
+        <section class="reference-stage" id="home">
+          <div class="container reference-grid reference-grid--hero">
+            <article
+              class="reference-panel hero-reference reveal panel-word"
+              data-word="CREATIVE"
+            >
+              <div class="hero-reference__copy">
+                <p class="micro-tag">Hello There!</p>
+                <h1>
+                  I'm <span>Adithyan Ashok,</span>
+                  Full-Stack Developer based in India.
+                </h1>
+                <p class="hero-reference__lede">
+                  I build polished mobile apps, strong backend systems, and
+                  modern web interfaces that feel fast, clear, and ready for
+                  real users.
+                </p>
 
-              <div class="hero__actions">
-                <a class="button button--primary" href="#featured"
-                  >Explore Projects</a
+                <div class="hero-reference__actions">
+                  <a class="neo-button neo-button--primary" href="#featured"
+                    >View My Work</a
+                  >
+                  <a
+                    class="neo-button neo-button--ghost"
+                    href="assets/Adithyan-Ashok-Resume.pdf"
+                    download
+                    >Download CV</a
+                  >
+                </div>
+
+                <div class="hero-reference__facts">
+                  <div>
+                    <strong>8+</strong>
+                    <span>projects shipped</span>
+                  </div>
+                  <div>
+                    <strong>Mobile + Web</strong>
+                    <span>full product delivery</span>
+                  </div>
+                  <div>
+                    <strong>Auth, Payments, Realtime</strong>
+                    <span>real feature depth</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-reference__visual" data-tilt>
+                <div class="hero-reference__orb"></div>
+                <div class="hero-reference__ring"></div>
+                <img
+                  src="assets/img/me2.jpeg"
+                  alt="Portrait of Adithyan Ashok"
+                />
+                <span class="hero-float hero-float--left">Flutter + React</span>
+                <span class="hero-float hero-float--right"
+                  >Backend Systems</span
                 >
+                <span class="hero-float hero-float--bottom"
+                  >Product Builder</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="reference-panel tools-reference reveal panel-word"
+              id="tools"
+              data-word="TOOLS"
+            >
+              <div class="panel-heading">
+                <p class="micro-tag">My Favorite Stack</p>
+                <h2>
+                  Exploring the tools
+                  <span>behind my builds</span>
+                </h2>
+              </div>
+
+              <div class="tool-grid">
+                <article class="tool-card" data-tilt>
+                  <div class="tool-card__top">
+                    <div class="tool-card__brand">
+                      <span class="tool-icon">F</span>
+                      <strong>Flutter</strong>
+                    </div>
+                    <span class="tool-card__score">96%</span>
+                  </div>
+                  <div class="tool-card__bar"><span style="width: 96%"></span></div>
+                </article>
+
+                <article class="tool-card" data-tilt>
+                  <div class="tool-card__top">
+                    <div class="tool-card__brand">
+                      <span class="tool-icon">R</span>
+                      <strong>React.js</strong>
+                    </div>
+                    <span class="tool-card__score">92%</span>
+                  </div>
+                  <div class="tool-card__bar"><span style="width: 92%"></span></div>
+                </article>
+
+                <article class="tool-card" data-tilt>
+                  <div class="tool-card__top">
+                    <div class="tool-card__brand">
+                      <span class="tool-icon">N</span>
+                      <strong>NestJS</strong>
+                    </div>
+                    <span class="tool-card__score">90%</span>
+                  </div>
+                  <div class="tool-card__bar"><span style="width: 90%"></span></div>
+                </article>
+
+                <article class="tool-card" data-tilt>
+                  <div class="tool-card__top">
+                    <div class="tool-card__brand">
+                      <span class="tool-icon">A</span>
+                      <strong>AWS</strong>
+                    </div>
+                    <span class="tool-card__score">85%</span>
+                  </div>
+                  <div class="tool-card__bar"><span style="width: 85%"></span></div>
+                </article>
+
+                <article class="tool-card" data-tilt>
+                  <div class="tool-card__top">
+                    <div class="tool-card__brand">
+                      <span class="tool-icon">N</span>
+                      <strong>Node.js</strong>
+                    </div>
+                    <span class="tool-card__score">93%</span>
+                  </div>
+                  <div class="tool-card__bar"><span style="width: 93%"></span></div>
+                </article>
+
+                <article class="tool-card" data-tilt>
+                  <div class="tool-card__top">
+                    <div class="tool-card__brand">
+                      <span class="tool-icon">F</span>
+                      <strong>Firebase</strong>
+                    </div>
+                    <span class="tool-card__score">91%</span>
+                  </div>
+                  <div class="tool-card__bar"><span style="width: 91%"></span></div>
+                </article>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="marquee-strip" aria-hidden="true">
+          <div class="marquee-strip__track">
+            <span>Web Design</span>
+            <span>App Design</span>
+            <span>Dashboard</span>
+            <span>Wireframe</span>
+            <span>Full-Stack Build</span>
+            <span>API Systems</span>
+            <span>Web Design</span>
+            <span>App Design</span>
+            <span>Dashboard</span>
+            <span>Wireframe</span>
+            <span>Full-Stack Build</span>
+            <span>API Systems</span>
+          </div>
+        </div>
+
+        <section class="reference-stage">
+          <div class="container reference-grid reference-grid--content">
+            <article
+              class="reference-panel services-reference reveal panel-word"
+              id="services"
+              data-word="SERVICES"
+            >
+              <div class="panel-heading panel-heading--row">
+                <div>
+                  <p class="micro-tag">My Specialization</p>
+                  <h2>Services I Provide</h2>
+                </div>
+                <a class="neo-button neo-button--small" href="#contact"
+                  >Lets Talk</a
+                >
+              </div>
+
+              <div class="service-grid">
+                <article class="service-card" data-tilt>
+                  <span class="service-card__icon"
+                    ><i class="bi bi-phone"></i
+                  ></span>
+                  <h3>Mobile App Design</h3>
+                  <p>
+                    Clean, responsive app interfaces with strong user flow and
+                    production-minded implementation.
+                  </p>
+                  <a href="#featured">See Work</a>
+                </article>
+
+                <article class="service-card" data-tilt>
+                  <span class="service-card__icon"
+                    ><i class="bi bi-window-stack"></i
+                  ></span>
+                  <h3>Application Systems</h3>
+                  <p>
+                    Full-stack products with auth, dashboards, APIs, storage,
+                    payments, and scalable backend logic.
+                  </p>
+                  <a href="#featured">See Work</a>
+                </article>
+
+                <article class="service-card" data-tilt>
+                  <span class="service-card__icon"
+                    ><i class="bi bi-code-square"></i
+                  ></span>
+                  <h3>Website Development</h3>
+                  <p>
+                    Professional websites with stronger visual hierarchy,
+                    modern motion, and fast front-end delivery.
+                  </p>
+                  <a href="#featured">See Work</a>
+                </article>
+              </div>
+            </article>
+
+            <article
+              class="reference-panel portfolio-reference reveal panel-word"
+              id="featured"
+              data-word="PORTFOLIO"
+            >
+              <div class="panel-heading panel-heading--row">
+                <div>
+                  <p class="micro-tag">Latest Portfolio</p>
+                  <h2>
+                    Projects that show
+                    <span>my product thinking</span>
+                  </h2>
+                </div>
+                <a class="neo-button neo-button--small" href="#contact"
+                  >Hire Me</a
+                >
+              </div>
+
+              <div class="portfolio-stack">
+                <a class="portfolio-card portfolio-card--wide" href="gamevera-details.html">
+                  <div class="portfolio-card__media">
+                    <img
+                      src="assets/img/portfolio/gamevera-cover.png"
+                      alt="GameVera preview"
+                    />
+                  </div>
+                  <div class="portfolio-card__copy">
+                    <div class="portfolio-tags">
+                      <span>Realtime</span>
+                      <span>Microservices</span>
+                      <span>React + NestJS</span>
+                    </div>
+                    <h3>GameVera</h3>
+                    <p>
+                      A review platform with live discussions, AI-powered
+                      insights, and production-ready backend architecture.
+                    </p>
+                    <span class="portfolio-link">Open Case Study</span>
+                  </div>
+                </a>
+
+                <div class="portfolio-stack__bottom">
+                  <a class="portfolio-card" href="wisebanker-details.html">
+                    <div class="portfolio-card__copy">
+                      <div class="portfolio-tags">
+                        <span>Fintech</span>
+                        <span>Reports</span>
+                        <span>Payments</span>
+                      </div>
+                      <h3>Wise Banker</h3>
+                      <p>
+                        Financial assessment workflow with report generation,
+                        storage, onboarding, and service delivery.
+                      </p>
+                      <span class="portfolio-link">View Project</span>
+                    </div>
+                  </a>
+
+                  <a class="portfolio-card portfolio-card--image" href="gymbook-details.html">
+                    <div class="portfolio-card__media">
+                      <img
+                        src="assets/img/portfolio/gymbook.png"
+                        alt="GymBook preview"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="marquee-strip marquee-strip--alt" aria-hidden="true">
+          <div class="marquee-strip__track">
+            <span>Flutter</span>
+            <span>React Native</span>
+            <span>Node.js</span>
+            <span>NestJS</span>
+            <span>MongoDB</span>
+            <span>PostgreSQL</span>
+            <span>AWS</span>
+            <span>Flutter</span>
+            <span>React Native</span>
+            <span>Node.js</span>
+            <span>NestJS</span>
+            <span>MongoDB</span>
+            <span>PostgreSQL</span>
+            <span>AWS</span>
+          </div>
+        </div>
+
+        <section class="reference-stage">
+          <div class="container reference-grid reference-grid--bottom">
+            <article
+              class="reference-panel about-reference reveal panel-word"
+              id="about"
+              data-word="ABOUT"
+            >
+              <div class="about-reference__visual">
+                <div class="about-reference__orb"></div>
+                <img
+                  src="assets/img/me2.jpeg"
+                  alt="Portrait of Adithyan Ashok"
+                />
+                <span class="hero-float hero-float--bottom">UI / UX Focus</span>
+              </div>
+
+              <div class="about-reference__copy">
+                <p class="micro-tag">About Me</p>
+                <h2>Who is <span>Adithyan Ashok?</span></h2>
+                <p>
+                  I am a full-stack developer who enjoys building interfaces
+                  that look refined and workflows that hold up in real use. My
+                  recent work covers mobile apps, SaaS systems, microservices,
+                  payments, and production-ready backend features.
+                </p>
+
+                <div class="stat-grid">
+                  <article>
+                    <strong>8+</strong>
+                    <span>Projects Completed</span>
+                  </article>
+                  <article>
+                    <strong>6+</strong>
+                    <span>Product Types Covered</span>
+                  </article>
+                  <article>
+                    <strong>Full-Stack</strong>
+                    <span>Frontend to backend ownership</span>
+                  </article>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="reference-panel contact-reference reveal panel-word"
+              id="contact"
+              data-word="CONNECT"
+            >
+              <div class="panel-heading">
+                <p class="micro-tag">Lets Build</p>
+                <h2>
+                  Ready to create a
+                  <span>stronger product experience?</span>
+                </h2>
+                <p class="contact-reference__lede">
+                  If you need modern UI, reliable backend work, or someone who
+                  can handle both sides of the build, lets talk.
+                </p>
+              </div>
+
+              <div class="contact-reference__list">
+                <a href="mailto:adithyanashok406@gmail.com">
+                  <i class="bi bi-envelope"></i>
+                  <div>
+                    <strong>Email</strong>
+                    <span>adithyanashok406@gmail.com</span>
+                  </div>
+                </a>
+
+                <a href="tel:+917558006610">
+                  <i class="bi bi-telephone"></i>
+                  <div>
+                    <strong>Phone</strong>
+                    <span>+91 755 800 6610</span>
+                  </div>
+                </a>
+
                 <a
-                  class="button button--ghost"
+                  href="https://github.com/adithyanashok"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="bi bi-github"></i>
+                  <div>
+                    <strong>GitHub</strong>
+                    <span>github.com/adithyanashok</span>
+                  </div>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/adithyanashok/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="bi bi-linkedin"></i>
+                  <div>
+                    <strong>LinkedIn</strong>
+                    <span>linkedin.com/in/adithyanashok</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="contact-reference__actions">
+                <a
+                  class="neo-button neo-button--primary"
                   href="assets/Adithyan-Ashok-Resume.pdf"
                   download
                   >Download Resume</a
                 >
+                <a class="neo-button neo-button--ghost" href="#featured"
+                  >View Projects</a
+                >
               </div>
-
-              <ul class="hero__proof">
-                <li>
-                  <strong>8+</strong>
-                  <span>portfolio projects shipped</span>
-                </li>
-                <li>
-                  <strong>Mobile + Web</strong>
-                  <span>cross-platform product delivery</span>
-                </li>
-                <li>
-                  <strong>Payments, Auth, Realtime</strong>
-                  <span
-                    >practical product features, not just landing pages</span
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <aside class="hero__aside reveal" aria-label="Featured highlights">
-              <section class="hero-panel hero-panel--primary">
-                <p class="eyebrow">Current Focus</p>
-                <h2>Build scalable product systems.</h2>
-                <p>
-                  I am currently focusing on projects that show stronger
-                  architecture, backend depth, and product thinking rather than
-                  simple portfolio demos.
-                </p>
-                <div class="hero-chip-row">
-                  <span>Microservices</span>
-                  <span>Realtime systems</span>
-                  <span>AWS + Docker</span>
-                </div>
-              </section>
-
-              <div class="hero-panel-grid">
-                <article class="hero-mini-card">
-                  <span>Client Project</span>
-                  <h3>Wise Banker</h3>
-                  <p>
-                    Financial assessment platform with reports, storage, and
-                    payments.
-                  </p>
-                </article>
-                <article class="hero-mini-card">
-                  <span>Personal Project</span>
-                  <h3>GameVera</h3>
-                  <p>
-                    Microservices-based review platform with AI insights and
-                    live discussions.
-                  </p>
-                </article>
-                <article class="hero-mini-card">
-                  <span>Personal Project</span>
-                  <h3>GymBook</h3>
-                  <p>
-                    Subscription-based gym CRM with OTP, payments, and scalable
-                    backend flows.
-                  </p>
-                </article>
-              </div>
-            </aside>
-          </div>
-        </section>
-
-        <section class="section section--soft" id="about">
-          <div class="container">
-            <div class="section-heading reveal">
-              <p class="eyebrow">About</p>
-              <h2>
-                A portfolio that should feel like a product, not a template.
-              </h2>
-              <p>
-                I am a full-stack developer focused on building useful, scalable
-                applications with clear structure, polished interactions, and
-                backend systems that hold up in real use.
-              </p>
-            </div>
-
-            <div class="capabilities">
-              <article class="capability reveal">
-                <span class="capability__icon"
-                  ><i class="bi bi-phone"></i
-                ></span>
-                <h3>Mobile-first product development</h3>
-                <p>
-                  Cross-platform apps in Flutter and React Native with careful
-                  attention to UI, state management, responsiveness, and release
-                  readiness.
-                </p>
-              </article>
-              <article class="capability reveal">
-                <span class="capability__icon"
-                  ><i class="bi bi-hdd-network"></i
-                ></span>
-                <h3>Backend systems that support growth</h3>
-                <p>
-                  APIs, authentication, payments, notifications, file uploads,
-                  and database-backed workflows with Node.js, NestJS, Firebase,
-                  MongoDB, and AWS.
-                </p>
-              </article>
-              <article class="capability reveal">
-                <span class="capability__icon"
-                  ><i class="bi bi-stars"></i
-                ></span>
-                <h3>Clean interfaces with strong flow</h3>
-                <p>
-                  Minimal layouts, better visual hierarchy, smooth transitions,
-                  and product decisions that help users move quickly without
-                  clutter.
-                </p>
-              </article>
-            </div>
-
-            <div class="toolbelt reveal">
-              <div class="toolbelt__copy">
-                <p class="eyebrow">Core Stack</p>
-                <h3>Tools I use to take products from idea to launch</h3>
-              </div>
-              <div class="chip-group">
-                <span>Flutter</span>
-                <span>React Native</span>
-                <span>React.js</span>
-                <span>Tailwind CSS</span>
-                <span>Node.js</span>
-                <span>ExpressJS</span>
-                <span>NestJS</span>
-                <span>PostgreSQL</span>
-                <span>MySQL</span>
-                <span>MongoDB</span>
-                <span>Firebase</span>
-                <span>Redis</span>
-                <span>TypeORM</span>
-                <span>AWS S3</span>
-                <span>Docker</span>
-                <span>CI/CD</span>
-                <span>Stripe</span>
-                <span>Razorpay</span>
-                <span>Socket.IO</span>
-                <span>Swagger</span>
-                <span>Git</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--dark" id="featured">
-          <div class="container">
-            <div class="section-heading section-heading--dark reveal">
-              <p class="eyebrow">Featured Work</p>
-              <h2>
-                Four projects that show how I think about product building.
-              </h2>
-              <p>
-                These are the projects I want to lead with right now:
-                healthcare, fintech, SaaS, and product platforms that show
-                architecture, scale, and end-to-end execution.
-              </p>
-            </div>
-
-            <div class="featured-projects">
-              <article class="project-card project-card--feature reveal">
-                <div class="project-card__media">
-                  <img
-                    src="assets/img/portfolio/getadoctor.png"
-                    alt="GetADoctor healthcare platform preview"
-                  />
-                </div>
-                <div class="project-card__content">
-                  <p class="project-card__type">Latest Project</p>
-                  <h3>GetADoctor</h3>
-                  <p class="project-card__summary">
-                    A healthcare platform for Kerala that helps patients compare
-                    treatment options, connect with trusted specialists, and get
-                    guided support for home care, lab tests, and surgery
-                    journeys.
-                  </p>
-                  <ul class="project-card__points">
-                    <li>
-                      Built around surgery discovery, treatment enquiries, and
-                      clinical coordination flows
-                    </li>
-                    <li>
-                      Covers doctor-at-home, nursing, lab tests, and specialized
-                      surgical support
-                    </li>
-                    <li>
-                      Responsive healthcare interface with contact forms,
-                      specialty listings, and WhatsApp access
-                    </li>
-                  </ul>
-                  <div class="project-card__tags">
-                    <span>Healthcare</span>
-                    <span>Next.js</span>
-                    <span>Responsive UI</span>
-                    <span>Lead Forms</span>
-                    <span>SEO</span>
-                    <span>WhatsApp</span>
-                  </div>
-                  <div class="project-card__links">
-                    <a href="getadoctor-details.html">Case Study</a>
-                  </div>
-                </div>
-              </article>
-
-              <article class="project-card project-card--feature reveal">
-                <div class="project-card__media">
-                  <img
-                    src="assets/img/portfolio/wisebanker-cover.png"
-                    alt="Wise Banker platform preview"
-                  />
-                </div>
-                <div class="project-card__content">
-                  <p class="project-card__type">Client Project</p>
-                  <h3>Wise Banker</h3>
-                  <p class="project-card__summary">
-                    A full-stack fintech assessment platform that helps users
-                    understand financial health, access services, and move
-                    through a complete report-driven workflow.
-                  </p>
-                  <ul class="project-card__points">
-                    <li>
-                      Node.js and Express backend with PostgreSQL and MongoDB
-                    </li>
-                    <li>
-                      Dynamic PDF report generation with AWS S3-backed file
-                      storage
-                    </li>
-                    <li>
-                      End-to-end onboarding to payment and report delivery flow
-                    </li>
-                  </ul>
-                  <div class="project-card__tags">
-                    <span>Node.js</span>
-                    <span>ExpressJS</span>
-                    <span>PostgreSQL</span>
-                    <span>MongoDB</span>
-                    <span>AWS</span>
-                    <span>Razorpay</span>
-                  </div>
-                  <div class="project-card__links">
-                    <a href="wisebanker-details.html">Case Study</a>
-                  </div>
-                </div>
-              </article>
-
-              <article class="project-card project-card--feature reveal">
-                <div class="project-card__media">
-                  <img
-                    src="assets/img/portfolio/gamevera-cover.png"
-                    alt="GameVera platform preview"
-                  />
-                </div>
-                <div class="project-card__content">
-                  <p class="project-card__type">Featured Project</p>
-                  <h3>GameVera</h3>
-                  <p class="project-card__summary">
-                    A scalable game review platform built with a microservices
-                    architecture, real-time discussions, AI-powered insights,
-                    and production-minded deployment.
-                  </p>
-                  <ul class="project-card__points">
-                    <li>
-                      Six NestJS services with Socket.IO for live discussions
-                    </li>
-                    <li>
-                      JWT and OAuth authentication with CSRF protection and rate
-                      limiting
-                    </li>
-                    <li>
-                      Docker, AWS, caching, and CI/CD for performance and
-                      deployment
-                    </li>
-                  </ul>
-                  <div class="project-card__tags">
-                    <span>React.js</span>
-                    <span>Tailwind</span>
-                    <span>NestJS</span>
-                    <span>PostgreSQL</span>
-                    <span>MySQL</span>
-                    <span>Socket.IO</span>
-                  </div>
-                  <div class="project-card__links">
-                    <a href="gamevera-details.html">Case Study</a>
-                  </div>
-                </div>
-              </article>
-
-              <article class="project-card project-card--feature reveal">
-                <div class="project-card__media">
-                  <img
-                    src="assets/img/portfolio/gymbook.png"
-                    alt="GymBook application preview"
-                  />
-                </div>
-                <div class="project-card__content">
-                  <p class="project-card__type">Featured Project</p>
-                  <h3>GymBook</h3>
-                  <p class="project-card__summary">
-                    A subscription-based SaaS product for gym owners with CRM,
-                    member management, payments, OTP verification, and a backend
-                    built to scale.
-                  </p>
-                  <ul class="project-card__points">
-                    <li>
-                      React Native app with a focused SaaS workflow for gym
-                      operations
-                    </li>
-                    <li>
-                      NestJS backend with PostgreSQL, TypeORM, Redis, and
-                      Swagger
-                    </li>
-                    <li>
-                      Stripe payments, Twilio OTP, AWS S3, and Docker-based
-                      deployment
-                    </li>
-                  </ul>
-                  <div class="project-card__tags">
-                    <span>React Native</span>
-                    <span>NestJS</span>
-                    <span>PostgreSQL</span>
-                    <span>Redis</span>
-                    <span>Stripe</span>
-                    <span>Twilio</span>
-                  </div>
-                  <div class="project-card__links">
-                    <a href="gymbook-details.html">Case Study</a>
-                    <a
-                      href="https://github.com/adithyanashok/gym-book"
-                      target="_blank"
-                      rel="noreferrer"
-                      >GitHub</a
-                    >
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="experience">
-          <div class="container experience-grid">
-            <div class="experience-copy reveal">
-              <p class="eyebrow">Experience Snapshot</p>
-              <h2>
-                I like building the full journey, not just isolated screens.
-              </h2>
-              <p>
-                My work is strongest when product structure, frontend quality,
-                and backend reliability all matter. I enjoy taking ownership of
-                the user flow from the first interface decision to the final API
-                connection, payment flow, or notification system.
-              </p>
-              <div class="experience-meta">
-                <div>
-                  <span>Based in</span>
-                  <strong>Malappuram, India</strong>
-                </div>
-                <div>
-                  <span>Availability</span>
-                  <strong>Open to freelance work</strong>
-                </div>
-              </div>
-            </div>
-
-            <div class="experience-cards">
-              <article class="experience-card reveal">
-                <span>01</span>
-                <h3>Client and product delivery</h3>
-                <p>
-                  I can take an idea from concept to interface, backend,
-                  integrations, and deployment-ready implementation without
-                  losing structure.
-                </p>
-              </article>
-              <article class="experience-card reveal">
-                <span>02</span>
-                <h3>Architecture that goes deeper</h3>
-                <p>
-                  My recent work includes microservices, hybrid databases,
-                  caching, server-side PDF generation, and real-time systems.
-                </p>
-              </article>
-              <article class="experience-card reveal">
-                <span>03</span>
-                <h3>Clean, modern execution</h3>
-                <p>
-                  I care about layout rhythm, motion quality, content hierarchy,
-                  and making interfaces feel intentional rather than overloaded.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--soft" id="archive">
-          <div class="container">
-            <div class="section-heading reveal">
-              <p class="eyebrow">Project Archive</p>
-              <h2>A broader look at the work behind the portfolio.</h2>
-              <p>
-                A broader look at current priority work plus earlier products
-                built across fintech, SaaS, ecommerce, media, and mobile apps.
-              </p>
-            </div>
-
-            <div class="archive-grid">
-              <a class="archive-card reveal" href="getadoctor-details.html">
-                <img
-                  src="assets/img/portfolio/getadoctor.png"
-                  alt="GetADoctor preview"
-                />
-                <div>
-                  <p>Latest Healthcare Project</p>
-                  <h3>GetADoctor</h3>
-                </div>
-              </a>
-              <a class="archive-card reveal" href="wisebanker-details.html">
-                <img
-                  src="assets/img/portfolio/wisebanker-cover.png"
-                  alt="Wise Banker preview"
-                />
-                <div>
-                  <p>Client Project</p>
-                  <h3>Wise Banker</h3>
-                </div>
-              </a>
-              <a class="archive-card reveal" href="gamevera-details.html">
-                <img
-                  src="assets/img/portfolio/gamevera-cover.png"
-                  alt="GameVera preview"
-                />
-                <div>
-                  <p>React.js + NestJS</p>
-                  <h3>GameVera</h3>
-                </div>
-              </a>
-              <a class="archive-card reveal" href="gymbook-details.html">
-                <img
-                  src="assets/img/portfolio/gymbook.png"
-                  alt="GymBook preview"
-                />
-                <div>
-                  <p>React Native + NestJS</p>
-                  <h3>GymBook</h3>
-                </div>
-              </a>
-              <a class="archive-card reveal" href="shopmate-details.html">
-                <img
-                  src="assets/img/portfolio/shopmate.png"
-                  alt="ShopMate preview"
-                />
-                <div>
-                  <p>Flutter + Firebase</p>
-                  <h3>ShopMate</h3>
-                </div>
-              </a>
-              <a class="archive-card reveal" href="eduzap-details.html">
-                <img
-                  src="assets/img/portfolio/eduzap.png"
-                  alt="EduZap preview"
-                />
-                <div>
-                  <p>Flutter + Firebase</p>
-                  <h3>EduZap</h3>
-                </div>
-              </a>
-              <a class="archive-card reveal" href="tubevibe-details.html">
-                <img
-                  src="assets/img/portfolio/tubevibe.png"
-                  alt="TubeVibe preview"
-                />
-                <div>
-                  <p>Flutter + Firebase</p>
-                  <h3>TubeVibe</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--contact" id="contact">
-          <div class="container contact-panel reveal">
-            <div class="contact-panel__copy">
-              <p class="eyebrow">Contact</p>
-              <h2>Let us build something useful and well-designed.</h2>
-              <p>
-                If you need a developer who cares about both engineering and the
-                final user experience, I would be happy to talk through the
-                project.
-              </p>
-            </div>
-
-            <div class="contact-panel__details">
-              <a href="mailto:adithyanashok406@gmail.com">
-                <i class="bi bi-envelope"></i>
-                <span>adithyanashok406@gmail.com</span>
-              </a>
-              <a href="tel:+917558006610">
-                <i class="bi bi-telephone"></i>
-                <span>+91 755 800 6610</span>
-              </a>
-              <a
-                href="https://github.com/adithyanashok"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="bi bi-github"></i>
-                <span>github.com/adithyanashok</span>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/adithyanashok/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="bi bi-linkedin"></i>
-                <span>linkedin.com/in/adithyanashok</span>
-              </a>
-            </div>
+            </article>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
         <div class="container site-footer__inner">
-          <p>Adithyan Ashok</p>
+          <p>Adithyan Ashok | Full-Stack Developer</p>
           <a href="#top">Back to top</a>
         </div>
       </footer>

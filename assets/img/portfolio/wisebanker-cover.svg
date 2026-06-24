@@ -1,0 +1,41 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="48" fill="#070B1F"/>
+  <rect width="1600" height="1000" rx="48" fill="url(#paint0_radial)"/>
+  <rect x="58" y="38" width="1484" height="76" rx="24" fill="rgba(255,255,255,0.03)"/>
+  <text x="100" y="87" fill="#F7F5FF" font-family="Arial, sans-serif" font-size="40" font-weight="700">wisebanker</text>
+  <text x="1160" y="85" fill="#B9B9D6" font-family="Arial, sans-serif" font-size="24">How it works</text>
+  <text x="1328" y="85" fill="#B9B9D6" font-family="Arial, sans-serif" font-size="24">Security</text>
+  <rect x="1430" y="48" width="92" height="52" rx="18" stroke="rgba(255,255,255,0.2)" fill="rgba(255,255,255,0.03)"/>
+  <text x="1466" y="82" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Login</text>
+
+  <circle cx="764" cy="420" r="320" fill="url(#paint1_radial)" fill-opacity="0.5"/>
+  <text x="386" y="436" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="104" font-weight="800">Clarity Before</text>
+  <text x="1050" y="436" fill="#5C3FFF" font-family="Arial, sans-serif" font-size="104" font-weight="800">Risk</text>
+  <text x="447" y="534" fill="#95A0BA" font-family="Arial, sans-serif" font-size="42">Before you apply for any loan, know where you stand today</text>
+
+  <rect x="656" y="604" width="420" height="96" rx="26" fill="url(#paint2_linear)"/>
+  <text x="710" y="664" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="34" font-weight="700">Check My Approval Strength</text>
+  <path d="M1022 646H1056" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1042 626L1060 646L1042 666" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="790" cy="765" r="10" fill="#00A889"/>
+  <text x="816" y="775" fill="#5A6482" font-family="Arial, sans-serif" font-size="28" font-weight="700">TAKES 3 MINUTES</text>
+  <text x="782" y="914" fill="#7280A0" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">SCROLL</text>
+  <path d="M807 934V990" stroke="#4F39D6" stroke-width="3"/>
+
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(510 238) rotate(32.47) scale(1165.82 1194.16)">
+      <stop stop-color="#1C1750"/>
+      <stop offset="0.42" stop-color="#0A0E27"/>
+      <stop offset="1" stop-color="#050813"/>
+    </radialGradient>
+    <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(764 420) rotate(90) scale(320)">
+      <stop stop-color="#4831FF"/>
+      <stop offset="1" stop-color="#4831FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="paint2_linear" x1="656" y1="604" x2="1076" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6A48FF"/>
+      <stop offset="1" stop-color="#4128D8"/>
+    </linearGradient>
+  </defs>
+</svg>
